@@ -13,28 +13,28 @@ $(document).ready(function() {
     });
         
     function questionOne(q1Result){
-        if (q1Result === "Reading"){
+        if (q1Result === "Bloomingdales"){
             return 1;
         }
-        else if (q1Result === "Coding"){
+        else if (q1Result === "Topshop"){
             return 2;
         }
-        else if (q1Result === "Sports"){
+        else if (q1Result === "Zara"){
             return 3;
         }
-        else if (q1Result === "Designing"){
+        else if (q1Result === "L Train Vintage"){
             return 4;
         }
     }
     
     function questionTwo(q2Result){
-        if (q2Result === "Pancakes"){
+        if (q2Result === "Manhattan"){
             return 1;
         }
-        else if (q2Result === "Waffles"){
+        else if (q2Result === "Queens"){
             return 2;
         }
-        else if (q2Result === "French Toast"){
+        else if (q2Result === "Brooklyn"){
             return 3;
         }
     }
@@ -54,16 +54,16 @@ $(document).ready(function() {
     
   function answer(totalScore){
       if (totalScore <= 4){
-          return "Snapchat";
+          return "Blair Waldorf";
           
       }
       
      else if (totalScore >4 && totalScore <=  6){
-          return "Instagram";
+          return "Serena Van der Woodsen";
      }
      
      else if(totalScore> 6){
-        return "Facebook";
+        return "Dan Humphrey";
      }
           
       
