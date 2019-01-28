@@ -40,16 +40,18 @@ $(document).ready(function() {
     }
     
     function questionThree(q3Result){
-        if (q3Result.length >= 3){
+        if (q3Result === "Puppy"){
             return 1;
         }
-        else if (q3Result.length >= 6){
+        else if (q3Result === "Kitty"){
             return 2;
         }
-        else if (q3Result.length > 6) {
+        else if (q3Result === "Bunny") {
             return 3;
         }  
-        
+        else if (q3Result === "Bird") {
+            return 4;
+        }
     }
     
   function answer(totalScore){
@@ -69,5 +71,10 @@ $(document).ready(function() {
       
   }
 
+function congrats() {
+    $(".result").text("Hey," + " " + name + " " + "" );
+}
 
 });
+
+
